@@ -27,6 +27,7 @@ async function get_data(city) {
 		wind_degrees.innerHTML="Wind degrees: "+data_1.wind_degrees+" °";
 		sunrise.innerHTML = "Sunrise: " + data_1.sunrise;
 		sunset.innerHTML = "Sunset: " + data_1.sunset;
+		//aqi.innerHTML=data_1.aqi;
 
 		//console.log(response);
 		//console.log(city);
