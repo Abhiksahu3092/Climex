@@ -23,7 +23,7 @@ async function get_data(city) {
 		humidity.innerHTML = data_1.humidity + "%";
 		min_temp.innerHTML="Min. temp: "+data_1.min_temp+" °C";
 		max_temp.innerHTML="Max. temp: "+data_1.max_temp+" °C";
-		wind_speed.innerHTML = data_1.wind_speed;
+		wind_speed.innerHTML = data_1.wind_speed+" km/h";
 		wind_degrees.innerHTML="Wind degrees: "+data_1.wind_degrees+" °";
 		sunrise.innerHTML = "Sunrise: " + data_1.sunrise;
 		sunset.innerHTML = "Sunset: " + data_1.sunset;
@@ -45,5 +45,5 @@ input_data.addEventListener("click", (e) => {
 	//get_aqi(city.value);
 })
 
-get_data("delhi");
+get_data("New Delhi");
 //get_aqi("bhubaneswar");

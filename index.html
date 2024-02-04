@@ -10,24 +10,38 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   
-  <body>
-    <nav class="navbar bg-primary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <nav class="navbar bg-primary">
-          <div class="container-fluid">
-            <a class="navbar-brand text-black fw-bold" href="#">
-              <img src="/Assets/weather-2019-02-07.png" alt="Logo" width="30" height="24"
-              class="d-inline-block align-text-top">
-              Climex
-            </a>
+ <body>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <nav class="navbar bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand text-black fw-bold" href="#">
+                <img src="/Assets/weather-2019-02-07.png" alt="Logo" width="30" height="24"
+                class="d-inline-block align-text-top">
+                Climex
+              </a>
+            </div>
+          </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                How to Use ?
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li class="text-black text-center">You just need to search the city for which you want to check the weather</li>
+                </ul>
+              </li>
+            </ul>
+
+
           </div>
-        </nav>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="New Delhi" aria-label="Search" id="city">
-          <button class="btn btn-outline-secondary bg-dark" type="submit" id="input_data">search</button>
-        </form>
-      </div>
-    </nav>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 bg-secondary text-black" type="search" placeholder="New Delhi" aria-label="Search" id="city">
+              <button class="btn btn-outline-secondary bg-secondary text-black" type="submit" id="input_data">Search</button>
+            </form>
+        </div>
+      </nav>
     
     <h1 class="text-center m-3">Weather in <span id="city_name"> </span></h1>
     
@@ -76,14 +90,16 @@
         </div>
       </div>
 
-      <div class="col-sm-6 p-3">
+      <div class="col-sm-6 p-3 viewport" >
         <div class="card text-center text-white">
           <img src="Assets/sunset.jpg" class="card-img" alt="...">
           <div class="card-img-overlay">
             <h2 class="card-title">Sunrise and Sunset</h2>
             <h1 class="card-subtitle p-3" id="Sunrise and Sunset">
-              <h5 id="sunrise"></h5>
-              <h5 id="sunset"></h5>
+              <span id>
+                <h5 id="sunrise"></h5>
+                <h5 id="sunset"></h5>
+              </span>
             </h1>
           </div>
         </div>
