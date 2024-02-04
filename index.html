@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climex</title>
+  <link rel="icon" href="/Assets/weather-2019-02-07.png" type="image/icon type">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <nav class="navbar bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand text-black fw-bold" href="#">
+              <img src="/Assets/weather-2019-02-07.png" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">
+              Climex
+            </a>
+          </div>
+        </nav>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="New Delhi" aria-label="Search" id="city">
+          <button class="btn btn-outline-secondary bg-dark" type="submit" id="input_data">search</button>
+        </form>
+      </div>
+    </nav>
+    
+    <h1 class="text-center m-3">Weather in <span id="city_name"> </span></h1>
+    
+    <div class="p-5 m-3 row">
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/temp.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title">Temperatures</h3>
+            <h1 class="card-subtitle p-3" id="temp"><span></span></h1>
+            <h5 id="max_temp"></h5>
+            <h5 id="min_temp"></h5>
+            <h5 id="feels_like"></h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/wind.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title">Wind Speed</h3>
+            <h1 class="card-subtitle p-3" id="wind_speed"><span></span></h1>
+            <h5 id="wind_degrees"></h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/humidity.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title">humidity</h3>
+            <h1 class="card-subtitle p-3" id="humidity"><span></span></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/cloud.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title">Clouds</h3>
+            <h1 class="card-subtitle p-3" id="cloud_pct"><span></span></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/sunset.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h2 class="card-title">Sunrise and Sunset</h2>
+            <h1 class="card-subtitle p-3" id="Sunrise and Sunset">
+              <h5 id="sunrise"></h5>
+              <h5 id="sunset"></h5>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 p-3">
+        <div class="card text-center text-white">
+          <img src="Assets/aqi.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h3 class="card-title">AQI Index</h3>
+            <h1 class="card-subtitle p-3" id="aqi"><span></span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="index_2.js"></script>
+</body>
+
+</html>
