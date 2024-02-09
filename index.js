@@ -19,14 +19,14 @@ async function get_data(city) {
 
 		cloud_pct.innerHTML = data_1.cloud_pct;
 		temp.innerHTML = data_1.temp + "°C";
-		feels_like.innerHTML="Feels like: "+data_1.feels_like+ " °C";
+		//feels_like.innerHTML="Feels like: "+data_1.feels_like+ " °C";
 		humidity.innerHTML = data_1.humidity + "%";
-		min_temp.innerHTML="Min. temp: "+data_1.min_temp+" °C";
-		max_temp.innerHTML="Max. temp: "+data_1.max_temp+" °C";
+		//min_temp.innerHTML="Min. temp: "+data_1.min_temp+" °C";
+		//max_temp.innerHTML="Max. temp: "+data_1.max_temp+" °C";
 		wind_speed.innerHTML = data_1.wind_speed+" km/h";
-		wind_degrees.innerHTML="Wind degrees: "+data_1.wind_degrees+" °";
-		sunrise.innerHTML = "Sunrise: " + data_1.sunrise;
-		sunset.innerHTML = "Sunset: " + data_1.sunset;
+		//wind_degrees.innerHTML="Wind degrees: "+data_1.wind_degrees+" °";
+		sunrise.innerHTML = /*"Sunrise: " +*/ data_1.sunrise;
+		//sunset.innerHTML = "Sunset: " + data_1.sunset;
 		//aqi.innerHTML=data_1.aqi;
 
 		//console.log(response);
